@@ -1,0 +1,145 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Fri Mar 30 14:15:39 2018
+# Process ID: 5308
+# Current directory: C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent4208 C:\Users\Dhruv Sandesara\Desktop\Lab 4\lab4part3\lab4part3.xpr
+# Log file: C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/vivado.log
+# Journal file: C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.xpr}
+INFO: [Project 1-313] Project file moved from 'C:/Users/shash/Desktop/EE316/lab4part3' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 741.934 ; gain = 70.770
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Fri Mar 30 14:16:31 2018] Launched synth_1...
+Run output will be captured here: C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.runs/synth_1/runme.log
+[Fri Mar 30 14:16:31 2018] Launched impl_1...
+Run output will be captured here: C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183740226A
+set_property PROGRAM.FILE {C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.runs/impl_1/time_multiplexing_main.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.runs/impl_1/time_multiplexing_main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_time_multiplexing_main' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj tb_time_multiplexing_main_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.srcs/sources_1/new/clkdiv.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clkdiv
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.srcs/sources_1/new/hexto7segment.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module hexto7segment
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.srcs/sources_1/new/time_multiplexing_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_multiplexing_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.srcs/sources_1/new/time_mux_state_machine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module time_mux_state_machine
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.srcs/sim_1/imports/Downloads/tb_time_multiplexing_main.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_time_multiplexing_main
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 1de360ac870b49c0af3592180ea5150e --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_time_multiplexing_main_behav xil_defaultlib.tb_time_multiplexing_main xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.hexto7segment
+Compiling module xil_defaultlib.clkdiv
+Compiling module xil_defaultlib.time_mux_state_machine
+Compiling module xil_defaultlib.time_multiplexing_main
+Compiling module xil_defaultlib.tb_time_multiplexing_main
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_time_multiplexing_main_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Dhruv -notrace
+couldn't read file "C:/Users/Dhruv": no such file or directory
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar 30 14:28:12 2018...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_time_multiplexing_main_behav -key {Behavioral:sim_1:Functional:tb_time_multiplexing_main} -tclbatch {tb_time_multiplexing_main.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source tb_time_multiplexing_main.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_time_multiplexing_main_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1375.285 ; gain = 17.578
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183740226A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183740226A
+INFO: [Labtools 27-1435] Device xc7a35t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part3/lab4part3.runs/impl_1/time_multiplexing_main.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210183740226A
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 30 16:48:11 2018...

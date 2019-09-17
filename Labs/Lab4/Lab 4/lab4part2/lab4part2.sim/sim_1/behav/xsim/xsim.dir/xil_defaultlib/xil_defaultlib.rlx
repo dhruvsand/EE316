@@ -1,0 +1,8 @@
+0.6
+2017.4
+Dec 15 2017
+21:07:18
+C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part2/lab4part2.sim/sim_1/behav/xsim/glbl.v,1522437156,verilog,,,,glbl,,,,,,,,
+C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part2/lab4part2.srcs/sim_1/new/tb_rising_edge_detector.v,1522437158,verilog,,,,tb_rising_edge_detector,,,,,,,,
+C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part2/lab4part2.srcs/sources_1/new/clkdiv.v,1522437158,verilog,,C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part2/lab4part2.srcs/sources_1/new/rising_edge_detector.v,,clkdiv,,,,,,,,
+C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part2/lab4part2.srcs/sources_1/new/rising_edge_detector.v,1522437158,verilog,,C:/Users/Dhruv Sandesara/Desktop/Lab 4/lab4part2/lab4part2.srcs/sim_1/new/tb_rising_edge_detector.v,,rising_edge_detector,,,,,,,,
